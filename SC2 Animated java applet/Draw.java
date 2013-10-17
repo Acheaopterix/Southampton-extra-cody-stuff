@@ -44,7 +44,7 @@ public class Draw extends Applet implements MouseMotionListener, MouseListener, 
 	   public void run(){
 		   while(0!=1){
 			   
-			   //draw shite
+			   //draw stuff
 			   img.setFont(new Font("Comic Sans MS", 14, 20));
 			   img.setColor(Color.darkGray);
 			   img.fillRect(0, 0, width, height);
@@ -54,13 +54,13 @@ public class Draw extends Applet implements MouseMotionListener, MouseListener, 
 			   img.drawString(""+width+" "+height+"", 25, 24);
 			   img.drawRect(25, 25, width-50, height-50);
 			   
-			   //draw more shite
+			   //draw more stuff
 			   for(int i = 0 ;i < word.length(); i++){
 				   img.setColor(text[i].getColour());
 				   img.drawString(text[i].getLetter(), text[i].getXPos(), text[i].getYPos());
 			   }			 
 			   
-			   //dont draw shite, move it instead
+			   //dont draw stuff, move it instead
 			   for(int i = 0 ;i < word.length(); i++){
 				   text[i].moveText();
 			   }
